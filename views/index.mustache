@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Posts</h5>
+    <a href="/api/auth/logout">Logout</a>
+    {{ #posts }}
+        <h5>{{ Title }}</h5>
+        <p>{{ Content }}</p>
+    {{ /posts }}
+</body>
+</html>

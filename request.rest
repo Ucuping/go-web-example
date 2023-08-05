@@ -1,0 +1,52 @@
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "Coba",
+    "email": "aaa@mail.com",
+    "username": "aaa",
+    "password": "123"
+}
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "root"
+}
+
+###
+GET http://localhost:8080/api/auth/verify
+
+###
+GET http://localhost:8080/api/auth/logout
+
+
+###
+GET http://localhost:8080/api/posts
+
+###
+GET http://localhost:8080/api/posts/1
+
+###
+POST http://localhost:8080/api/posts/604
+Content-Type: application/json
+
+{
+    "title": "Welcome",
+    "content": "Welcome"
+}
+
+###
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+    "title": "Haii",
+    "content": "Haii"
+}
+
+###
+DELETE http://localhost:8080/api/posts/604
